@@ -55,13 +55,17 @@ enum _dr_as923_t {
 
 // Bands:
 //  g1 :   1%  16dBm
+//
+// This LMIC port only implements the AS923-1 frequency plan by default.
+// This build targets AS923-3 (RP002 group 3), which is AS923-1 shifted
+// by a fixed -6.6 MHz offset: 923.2 -> 916.6, 923.4 -> 916.8.
 //                 freq                band     datarates
 enum {
-        AS923_F1    = 923200000,      // g1   SF7-12
-        AS923_F2    = 923400000,      // g1   SF7-12
-        AS923_FDOWN = 923200000,      //      (RX2 freq, DR2)
-        AS923_FBCN  = 923400000,      //      default BCN, DR3
-        AS923_FPING = 923400000,      //      default ping, DR3
+        AS923_F1    = 916600000,      // g1   SF7-12
+        AS923_F2    = 916800000,      // g1   SF7-12
+        AS923_FDOWN = 916600000,      //      (RX2 freq, DR2)
+        AS923_FBCN  = 916800000,      //      default BCN, DR3
+        AS923_FPING = 916800000,      //      default ping, DR3
 };
 enum {
         AS923_FREQ_MIN = 915000000,
