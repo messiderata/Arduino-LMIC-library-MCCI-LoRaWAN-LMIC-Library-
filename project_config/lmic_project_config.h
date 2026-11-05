@@ -14,4 +14,4 @@
 
 // Strips LMIC's own internal debug printf strings (separate from this
 // project's own onEvent() logging, which is already trimmed).
-#define LMIC_DEBUG_LEVEL 3
+#define LMIC_DEBUG_LEVEL 3  

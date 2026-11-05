@@ -11,24 +11,31 @@
 <!-- markdownlint-disable -->
 <!-- TOC depthFrom:2 updateOnSave:true -->
 
-- [Introduction](#introduction)
-- [Installing](#installing)
-- [Getting Help](#getting-help)
-- [Features](#features)
-- [Documentation](#documentation)
-- [Known bugs and issues](#known-bugs-and-issues)
-- [Configuration](#configuration)
-- [Supported hardware](#supported-hardware)
-- [Pre-Integrated Boards](#pre-integrated-boards)
-- [PlatformIO](#platformio)
-- [Example Sketches](#example-sketches)
-- [Timing](#timing)
-- [Downlink data rate](#downlink-data-rate)
-- [Encoding Utilities](#encoding-utilities)
-- [Release History](#release-history)
-- [Contributions](#contributions)
-- [Trademark Acknowledgements](#trademark-acknowledgements)
-- [License](#license)
+- [Arduino-LMIC library ("MCCI LoRaWAN LMIC Library")](#arduino-lmic-library-mcci-lorawan-lmic-library)
+  - [Introduction](#introduction)
+  - [Installing](#installing)
+  - [Getting Help](#getting-help)
+    - [If it's not working](#if-its-not-working)
+    - [If you've found a bug](#if-youve-found-a-bug)
+  - [Features](#features)
+  - [Documentation](#documentation)
+  - [Known bugs and issues](#known-bugs-and-issues)
+  - [Configuration](#configuration)
+    - [Selecting the region](#selecting-the-region)
+    - [Selecting the radio transceiver](#selecting-the-radio-transceiver)
+  - [Supported hardware](#supported-hardware)
+  - [Pre-Integrated Boards](#pre-integrated-boards)
+  - [PlatformIO](#platformio)
+  - [Example Sketches](#example-sketches)
+  - [Timing](#timing)
+  - [Downlink data rate](#downlink-data-rate)
+  - [Encoding Utilities](#encoding-utilities)
+  - [Release History](#release-history)
+  - [Contributions](#contributions)
+  - [Trademark Acknowledgements](#trademark-acknowledgements)
+  - [License](#license)
+    - [Support Open Source Hardware and Software](#support-open-source-hardware-and-software)
+- [lora-lmic](#lora-lmic)
 
 <!-- /TOC -->
 <!-- markdownlint-restore -->
@@ -257,6 +264,7 @@ This library provides several examples.
 - [`compliance-otaa-halconfig.ino`](examples/compliance-otaa-halconfig/compliance-otaa-halconfig.ino) -- LoRaWAN compliance testing sketch.
 - [`helium-otaa.ino`](examples/helium-otaa/helium-otaa.ino) -- OTAA configured for the Helium network.
 - [`ttn-otaa-network-time.ino`](examples/ttn-otaa-network-time/ttn-otaa-network-time.ino) -- demonstrates network time requests.
+- [`thingspark_otaa.ino`](examples/pwx-otaa/thingspark_otaa.ino) -- basic OTAA transmission. Tested with Thingspark using (Heltech Vision Master T190).
 
 ## Timing
 

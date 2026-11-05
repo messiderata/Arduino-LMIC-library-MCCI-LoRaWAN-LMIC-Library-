@@ -1,0 +1,20 @@
+[
+  {
+    "file": "doc/user-guide-assets/screen_1.png",
+    "alt": "Arduino IDE preferences window",
+    "source": "https://developer.espressif.com/blog/2025/10/arduino-get-started/",
+    "url": "https://developer.espressif.com/blog/2025/10/arduino-get-started/arduino-preferences_hu_136fd0fc34e5a193.webp"
+  },
+  {
+    "file": "doc/user-guide-assets/screen_2.png",
+    "alt": "Adding board manager url",
+    "source": "https://developer.espressif.com/blog/2025/10/arduino-get-started/",
+    "url": "https://developer.espressif.com/blog/2025/10/arduino-get-started/arduino-url_hu_3ddb3ec3d456564.webp"
+  },
+  {
+    "file": "doc/user-guide-assets/screen_3.png",
+    "alt": "Installing esp32",
+    "source": "https://developer.espressif.com/blog/2025/10/arduino-get-started/",
+    "url": "https://developer.espressif.com/blog/2025/10/arduino-get-started/arduino-install_hu_b76097e8be93d94d.webp"
+  }
+]
