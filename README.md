@@ -14,6 +14,7 @@
 - [Arduino-LMIC library ("MCCI LoRaWAN LMIC Library")](#arduino-lmic-library-mcci-lorawan-lmic-library)
   - [Introduction](#introduction)
   - [Installing](#installing)
+  - [PWX OTAA quick start](#pwx-otaa-quick-start)
   - [Getting Help](#getting-help)
     - [If it's not working](#if-its-not-working)
     - [If you've found a bug](#if-youve-found-a-bug)
@@ -76,6 +77,19 @@ To install this library:
 - clone this git repository into your sketchbook/libraries folder.
 
 For more info, see [https://www.arduino.cc/en/Guide/Libraries](https://www.arduino.cc/en/Guide/Libraries).
+
+## PWX OTAA quick start
+
+1. Install this project’s ZIP through **Sketch > Include Library > Add .ZIP Library…** and wait for **Library installed**.
+2. Restart Arduino IDE to refresh its Examples menu.
+3. Open **File > Examples > MCCI LoRaWAN LMIC library > pwx-otaa**. Look under **Examples from Custom Libraries** if the menu is grouped.
+4. Select **Heltec Vision Master T190** and your board’s USB port.
+5. Enter your device’s JoinEUI/AppEUI, DevEUI and AppKey in `pwx-otaa.ino`. Reverse the byte pairs for the two EUIs; keep AppKey in normal order.
+6. Upload, open Serial Monitor at **9600 baud**, and check for `EV_JOINED`. Confirm the uplink in ThingPark.
+
+The sketch is [`examples/pwx-otaa/pwx-otaa.ino`](examples/pwx-otaa/pwx-otaa.ino). Its folder and filename must match. If it is not listed, check the sketchbook location in **File > Preferences**, restart the IDE, or use **File > Open** to select the `.ino` file directly. The installed library belongs in the `libraries` folder inside the configured sketchbook.
+
+See the [beginner user guide with screenshots](doc/PWX_OTAA_Beginner_User_Guide.docx) for the complete setup steps. Install the ZIP before opening the example.
 
 ## Getting Help
 
@@ -264,7 +278,7 @@ This library provides several examples.
 - [`compliance-otaa-halconfig.ino`](examples/compliance-otaa-halconfig/compliance-otaa-halconfig.ino) -- LoRaWAN compliance testing sketch.
 - [`helium-otaa.ino`](examples/helium-otaa/helium-otaa.ino) -- OTAA configured for the Helium network.
 - [`ttn-otaa-network-time.ino`](examples/ttn-otaa-network-time/ttn-otaa-network-time.ino) -- demonstrates network time requests.
-- [`thingspark_otaa.ino`](examples/pwx-otaa/thingspark_otaa.ino) -- basic OTAA transmission. Tested with Thingspark using (Heltech Vision Master T190).
+- [`pwx-otaa.ino`](examples/pwx-otaa/pwx-otaa.ino) -- Packetworx OTAA example for the Heltec Vision Master T190 (SX1262), configured for ThingPark AS923-3.
 
 ## Timing
 
